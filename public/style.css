@@ -1,0 +1,226 @@
+/* ========================================
+   Student Project Tracker
+   Main stylesheet
+   ======================================== */
+
+/* 1. Global styles */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #1f2937;
+  background: #f5f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  line-height: 1.6;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+/* 2. Main page layout */
+main,
+.container,
+.wrapper,
+.page-container {
+  width: 100%;
+  max-width: 960px;
+  margin-inline: auto;
+  padding: 32px 24px;
+}
+
+/* 3. Headings and text */
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  color: #111827;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+small,
+.help-text,
+.description {
+  color: #64748b;
+}
+
+/* 4. Sections and content groups */
+section,
+form,
+.project-form,
+.project-list {
+  margin-bottom: 28px;
+}
+
+section {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+/* 5. Form labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* 6. Form inputs */
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  margin: 0 0 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1f2937;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+  opacity: 1;
+}
+
+/* 7. Buttons */
+button {
+  display: inline-block;
+  padding: 11px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+button:active {
+  background: #1e40af;
+}
+
+/* 8. Visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+/* 9. Links */
+a {
+  color: #1d4ed8;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #1e40af;
+}
+
+/* 10. Project list and optional project cards */
+ul,
+ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.project-card {
+  padding: 20px;
+  margin-bottom: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #ffffff;
+  overflow-wrap: anywhere;
+}
+
+/* 11. Images and other wide content */
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* 12. Responsive layout: phones below 560px */
+@media (max-width: 559px) {
+  main,
+  .container,
+  .wrapper,
+  .page-container {
+    padding: 20px 16px;
+  }
+
+  section {
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}

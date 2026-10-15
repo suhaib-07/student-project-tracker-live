@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Project Tracker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Student Project Tracker</h1>
+            <p>Keep track of your electronics projects and their progress.</p>
+        </header>
+
+        <section aria-labelledby="add-project-heading">
+            <h2 id="add-project-heading">Add a Project</h2>
+
+            <form id="project-form">
+                <div>
+                    <label for="project-name">Project Name</label>
+                    <input
+                        type="text"
+                        id="project-name"
+                        name="project-name"
+                        placeholder="Enter project name"
+                    >
+                </div>
+
+                <div>
+                    <label for="project-status">Project Status</label>
+                    <select id="project-status" name="project-status">
+                        <option value="Not Started">Not Started</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </div>
+
+                <button type="submit">Add Project</button>
+            </form>
+        </section>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <section aria-labelledby="project-list-heading">
+            <h2 id="project-list-heading">Your Projects</h2>
+            <ul id="project-list">
+            </ul>
+        </section>
+    </main>
+    
+    <script src="/script.js" defer></script>
+</body>
+</html>
